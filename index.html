@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Colours: Blue : #b5e0e6 : Red : #f0442e : Background:#ffeabb : Skin:#faab82 : Green:#a9ca57 : Yellow:#fec81d : White:#f2f2f2 : #b9ceff -->
+<!-- Selling: Dragonfruit ; Avacado ; Mango ; Papaya ; Passionfruit ; Coconut ; Pineapple ; Lychee ; Grapefruit -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Play Bikes</title>
+	<link rel="icon" type="image/x-icon" href="Images/Logo.png">
+	<link rel="stylesheet" href="Stylesheet.css">
+	<link rel="stylesheet" href="Animate.css">
+</head>
+
+<body>
+	<div class="topnav">
+		<div>
+			<a class="active" href="index.html" style="padding: 0px; padding-right: 10px;"><img src="Images/Logo.png" alt="logo" width="80" height="48" style="float:left;"></a>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<a href="About.html">About</a>
+			<a href="index.html">WorkShop + Wheels</a>
+			<a href="Contact.html">Contact us</a>
+		</div>
+	</div>
+	
+	<div class="header">
+		<h1>Play Bikes</h1>
+	</div>
+	
+	<br>
+	
+	<!--<div style="animation: fadeIn 2s;">
+		<a href="Products.html">
+		<div class="hover" style="margin-bottom: 0%; margin-top: 3%;">
+			<div class="card">
+				<img src="Images/Logo.png" alt="Navigate to the products page." width="200" height="120">
+				<h3>Products</h3>
+			</div>
+		</div>
+		</a>
+	</div> -->
+	
+	<div style="animation: second 2s; margin-left: 20%">
+		<a href="About.html">
+		<div class="hover" style="margin-bottom: 0%; margin-top: 3%; margin-left: 7.5%; margin-right: 7.5%" id="mid">
+			<div class="card">
+				<img src="Images/Logo.png" alt="Navigate to the products page." width="200" height="120">
+				<h3>About</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="animation: thrid 2s; margin-left: 20%">
+		<a href="Contact.html">
+		<div class="hover" style="margin-bottom: 0%; margin-top: 3%; margin-left: 7.5%; margin-right: 7.5%;">
+			<div class="card">
+				<img src="Images/Logo.png" alt="Navigate to the products page." width="200" height="120">
+				<h3>Contact us</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+<!--	</div> width="100%" height="335"-->
+	
+	<div style="clear:both"></div>
+	
+	<div class="txtbox" style="height:570px">
+		<h2>HIGH QUALITY BICYCLE WHEELS & SERVICING</h2>
+		<p>With almost 20 years of experience, our Cremorne-based team of qualified bike mechanics offer repairs and servicing on all bicycle brands and models, as well as leading expertise on customised hand made wheels.</p>
+		<div class="slideshow-container" style="padding:0px; width:100%; height:335px; ">
+			<div class="mySlides" style="animation: fade 3s; width:100%;height:335px;">
+			  <img src="Images/1.png">
+			</div>
+
+			<div class="mySlides" style="animation: fade 3s; width:100%;height:335px;">
+			  <img src="Images/2.png">
+			</div>
+
+			<div class="mySlides" style="animation: fade 3s; width:100%;height:335px;">
+			  <img src="Images/3.png">
+			</div>
+			
+			<div class="mySlides" style="animation: fade 3s; width:100%;height:335px;">
+			  <img src="Images/4.png">
+			</div>
+			
+			<div class="mySlides" style="animation: fade 3s; width:100%;height:335px;">
+			  <img src="Images/5.png">
+			</div>
+
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			}
+			</script>
+		</div>
+	</div>
+	
+	
+	<script>
+	var w = window.innerWidth;
+//    document.getElementById("cards").style.width = ""+w+"px";
+//	document.getElementById("cards").style.paddingLeft = ""+33+"px";
+	if (w > 1450){
+		document.getElementById("mid").style.marginLeft = ""+7.5+"%";
+		document.getElementById("mid").style.marginRight = ""+7.5+"%";
+	} else {
+		document.getElementById("mid").style.marginLeft = ""+6.5+"%";
+		document.getElementById("mid").style.marginRight = ""+6.5+"%";
+	}
+	</script>
+</body>
+</html>
